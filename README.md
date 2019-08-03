@@ -145,8 +145,8 @@ from .models import DataModel
 
 
 class DataSerializer(serializers.ModelSerializer):
-    name =  serializers.CharField(source="rand_val")
-    desc =  serializers.CharField(source="intf_ver")
+    name =  serializers.CharField(source="name")
+    desc =  serializers.CharField(source="desc")
     
     class Meta:
         model = DataModel
